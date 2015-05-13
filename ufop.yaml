@@ -1,5 +1,4 @@
 image: ubuntu
 build_script:
-- echo building...
-- mv $RESOURCE/app/* .
-run: ./image.py
+    - mv $RESOURCE/image .
+run: ./image
