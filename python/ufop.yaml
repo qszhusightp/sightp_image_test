@@ -1,0 +1,6 @@
+image: ubuntu
+build_script:
+    - sudo apt-get install python-dev -y
+    - sudo pip install -r $RESOURCE/requirements.txt
+    - mv $RESOURCE/image.py .
+run: ./image.py
